@@ -101,6 +101,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-margin-top-big {
+  margin-bottom: 8rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -153,7 +156,25 @@ body {
   .card__picture {
     background-size: cover; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #0367a5, #4bb2f2), url(/img/DSCN1977.jpg);
+      background-image: linear-gradient(to right bottom, #0396f1, #022d49), url(/img/DSCN1977.jpg);
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      top: -10px;
+      background-blend-mode: screen;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #06f0f0, #004040), url(/img/DSCN1977.jpg);
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      top: -10px;
+      background-blend-mode: screen;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #87f006, #6c8901), url(/img/DSCN1977.jpg);
       height: 50%;
       width: 100%;
       position: absolute;
@@ -176,10 +197,14 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(3, 103, 165, 0.85), rgba(75, 178, 242, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(3, 150, 241, 0.85), rgba(2, 45, 73, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(2, 114, 114, 0.85), rgba(50, 63, 1, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(159, 210, 242, 0.85), rgba(2, 114, 114, 0.85)); }
   .card__details ul {
     list-style: none;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 20rem; }
     .card__details ul li {
@@ -188,6 +213,23 @@ body {
       padding: 1rem; }
       .card__details ul li:not(:last-child) {
         border-bottom: 1px solid #777; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: #fff; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 300; }
 
 .card .face {
   position: absolute;
@@ -213,7 +255,6 @@ body {
   transform: perspective(500px) rotateY(180deg); }
 
 .card .face.back {
-  color: #fff;
   transform: perspective(500px) rotateY(180deg); }
 
 .card:hover .face.back {
@@ -225,6 +266,12 @@ body {
 
 .gradient-a {
   background-image: linear-gradient(to right bottom, #4bb2f2, #0367a5); }
+
+.gradient-b {
+  background-image: linear-gradient(to right bottom, #06f0f0, #004040); }
+
+.gradient-c {
+  background-image: linear-gradient(to right bottom, #87f006, #6c8901); }
 
 .composition {
   position: relative; }
@@ -333,5 +380,9 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 2rem 0;
   margin-top: -20rem; }
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7; }

@@ -8,7 +8,29 @@ transform-style: preserve-3d;
         background-size: cover;
 
         &--1{
-            background-image: linear-gradient(to right bottom, $color-primary, $color-blue-light), url(/img/DSCN1977.jpg);
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(/img/DSCN1977.jpg);
+            height: 50%;
+            width: 100%;
+            position: absolute;
+            top: -10px;
+            background-blend-mode: screen;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        }
+
+        &--2{
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(/img/DSCN1977.jpg);
+            height: 50%;
+            width: 100%;
+            position: absolute;
+            top: -10px;
+            background-blend-mode: screen;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        }
+
+        &--3{
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(/img/DSCN1977.jpg);
             height: 50%;
             width: 100%;
             position: absolute;
@@ -37,7 +59,15 @@ transform-style: preserve-3d;
         box-decoration-break: clone;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, rgba($color-primary, .85), rgba($color-blue-light, .85));
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba($color-green, .85), rgba($color-green-dark, .85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, rgba($color-blue-lighter, .85), rgba($color-green, .85));
         }
     }
 
@@ -45,7 +75,7 @@ transform-style: preserve-3d;
 
         ul {
             list-style: none;
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
             padding-top: 20rem;
         
@@ -62,6 +92,31 @@ transform-style: preserve-3d;
             }
         }
     }
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+     }
+
+     &__price-box {
+        text-align: center;
+        margin-bottom: 8rem;
+        color: $color-white;
+     }
+
+     &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+     }
+
+     &__price-value {
+        font-size: 6rem;
+        font-weight: 300;
+     }
 }
 
 .card .face {
@@ -91,7 +146,7 @@ transform-style: preserve-3d;
 }
 
 .card .face.back {
-    color: #fff;
+    // color: #fff;
     transform: perspective(500px) rotateY(180deg);
 }
 
@@ -106,5 +161,13 @@ transform-style: preserve-3d;
 
 .gradient-a {
     background-image: linear-gradient(to right bottom, $color-blue-light, $color-primary);
+}
+
+.gradient-b {
+    background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+}
+
+.gradient-c {
+    background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
 }
 
