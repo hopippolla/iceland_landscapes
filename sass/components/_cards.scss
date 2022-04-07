@@ -1,0 +1,57 @@
+.card {
+   position: relative;
+   width: 30rem;
+   height: 35rem;
+   transform-style: preserve-3d;
+}
+
+.card .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .14);
+    transition: 1s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.card .face.front {
+    background: $color-white;
+}
+
+.card:hover .face.front {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card .face.back {
+    color: #fff;
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .face.back {
+    transform: perspective(500px) rotateY(360deg);
+}
+
+.card-text {
+    font-size: 1.6rem;
+    transform: perspective(500px) translateZ(50px);
+}
+
+.gradient-a {
+    background-image: linear-gradient(to right bottom, $color-blue-light, $color-primary);
+}
+
+.card-picture-1 {
+    background-size: cover;
+    height: 13rem;
+    background-image: url(/img/ice-1.png);
+
+
+}

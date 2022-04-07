@@ -65,7 +65,6 @@ body {
     animation: moveInRight 5s ease-out; }
 
 .heading-secondary {
-  margin-top: -10rem; 
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -145,6 +144,53 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
+
+.card {
+  position: relative;
+  width: 30rem;
+  height: 35rem;
+  transform-style: preserve-3d; }
+
+.card .face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.14);
+  transition: 1s ease-in-out;
+  transform: perspective(500px) rotateY(0deg); }
+
+.card .face.front {
+  background: #fff; }
+
+.card:hover .face.front {
+  transform: perspective(500px) rotateY(180deg); }
+
+.card .face.back {
+  color: #fff;
+  transform: perspective(500px) rotateY(180deg); }
+
+.card:hover .face.back {
+  transform: perspective(500px) rotateY(360deg); }
+
+.card-text {
+  font-size: 1.6rem;
+  transform: perspective(500px) translateZ(50px); }
+
+.gradient-a {
+  background-image: linear-gradient(to right bottom, #4bb2f2, #0367a5); }
+
+.card-picture-1 {
+  background-size: cover;
+  height: 13rem;
+  background-image: url(/img/ice-1.png); }
 
 .composition {
   position: relative; }
@@ -250,3 +296,8 @@ body {
   margin-top: -10rem; }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -20rem; }
