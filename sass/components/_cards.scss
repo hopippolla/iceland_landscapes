@@ -1,8 +1,67 @@
 .card {
-   position: relative;
-   width: 30rem;
-   height: 35rem;
-   transform-style: preserve-3d;
+position: relative;
+width: 30rem;
+height: 50rem;
+transform-style: preserve-3d;
+
+&__picture {
+        background-size: cover;
+
+        &--1{
+            background-image: linear-gradient(to right bottom, $color-primary, $color-blue-light), url(/img/DSCN1977.jpg);
+            height: 50%;
+            width: 100%;
+            position: absolute;
+            top: -10px;
+            background-blend-mode: screen;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        }
+    }
+
+&__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+    width: 75%;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($color-primary, .85), rgba($color-blue-light, .85));
+        }
+    }
+
+    &__details{
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 20rem;
+        
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-dark-grey;
+
+                }
+            }
+        }
+    }
 }
 
 .card .face {
@@ -17,6 +76,7 @@
     align-items: center;
     backface-visibility: hidden;
     border-radius: 3px;
+    overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .14);
     transition: 1s ease-in-out;
     transform: perspective(500px) rotateY(0deg);
@@ -48,10 +108,3 @@
     background-image: linear-gradient(to right bottom, $color-blue-light, $color-primary);
 }
 
-.card-picture-1 {
-    background-size: cover;
-    height: 13rem;
-    background-image: url(/img/ice-1.png);
-
-
-}
