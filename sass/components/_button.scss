@@ -10,6 +10,8 @@
         transition: all .2s;
         font-size: 1.6rem;
 
+        border: none;
+
 }
 
     &:hover {
@@ -19,6 +21,7 @@
 
     &:active,
     &:focus  {
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
 }
@@ -58,8 +61,12 @@
         box-shadow: 0 .5rem 1rem rgba($color-black, .15);
         transform: translateY(-2px);
     }
+
 }
- .next-step {
-     padding-top: 4rem;
-     font-family: "Lato", sans-serif;
- }
+
+.next-step {
+    margin-top: 40px;
+    background-color: $color-white;
+    color: $color-dark-grey;
+    font-family: "Lato", sans-serif;
+}
