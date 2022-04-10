@@ -466,36 +466,46 @@ body {
 
 .footer {
   background-color: #333;
-  padding: 1rem 0;
+  padding: 2rem 0;
   font-size: 1.4rem; }
   .footer__logo-box {
     text-align: center;
-    margin-bottom: 4rem; }
+    margin-bottom: 2rem; }
   .footer__logo {
-    width: 3rem;
-    height: 3rem; }
+    width: 18rem;
+    height: auto; }
   .footer__navigation {
-    border-top: 1px solid .footer__navigation color-light-grey-1;
+    border-top: 1px solid #f7f7f7;
     padding-top: 2rem;
-    display: inline-block; }
+    display: inline-block;
+    padding-right: 1rem;
+    margin: 40px;
+    width: 45%; }
   .footer__list {
-    list-style: none; }
+    list-style: none;
+    text-align: center; }
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
-      margin-right: 1.5rem; }
+      margin-right: 4.5rem; }
   .footer__link:link, .footer__link:visited {
     color: #f7f7f7;
     text-decoration: none;
     text-transform: uppercase;
-    display: inline-block; }
+    display: inline-block;
+    transition: all .2s; }
   .footer__link:hover, .footer__link:active {
     color: #9fd2f2;
-    box-shadow: 0 1rem 2 rem rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 1rem 2 rem rgba(0, 0, 0, 0.4);
+    transform: scale(1.1); }
   .footer__copyright {
     color: color-light-grey-1;
     float: right;
-    width: 50%; }
+    width: 45%;
+    border-top: 1px solid #f7f7f7;
+    padding-top: 2rem;
+    margin-top: -84px;
+    margin-right: 40px; }
 
 .header {
   height: 95vh;
