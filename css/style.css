@@ -464,6 +464,39 @@ body {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
 
+.footer {
+  background-color: #333;
+  padding: 1rem 0;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 3rem; }
+  .footer__logo {
+    width: 5rem;
+    height: 5rem; }
+  .footer__navigation {
+    border-top: 1px solid .footer__navigation color-light-grey-1;
+    padding-top: 2rem;
+    display: inline-block; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #f7f7f7;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block; }
+  .footer__link:hover, .footer__link:active {
+    color: #9fd2f2;
+    box-shadow: 0 1rem 2 rem rgba(0, 0, 0, 0.4); }
+  .footer__copyright {
+    color: color-light-grey-1;
+    float: right;
+    width: 80%; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right top, rgba(3, 103, 165, 0.4), rgba(2, 114, 114, 0.9)), url(../img/bg-iceland.png);
@@ -476,7 +509,7 @@ body {
     top: 3.5rem;
     left: 3.5rem; }
   .header__logo {
-    height: 6rem; }
+    height: 10rem; }
   .header__text-box {
     position: absolute;
     top: 40%;
