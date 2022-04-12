@@ -413,12 +413,12 @@ body {
 .form__input {
   font-size: 1.5rem;
   font-family: inherit;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
   border-bottom: 3px solid transparent;
-  width: 90%;
+  width: 60%;
   display: block;
   transition: all .6s; }
 
@@ -439,7 +439,8 @@ body {
   margin-left: 2rem;
   margin-top: .7rem;
   display: block;
-  transition: all .3s; }
+  transition: all .3s;
+  align-content: center; }
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
@@ -563,8 +564,19 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 90%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .story {
+      transform: skewX(0); } }
   .story > * {
     transform: skewX(12deg); }
+    @media (max-width: 56.25em) {
+      .story > * {
+        transform: skewX(3deg); } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -574,6 +586,9 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12.01deg);
     position: relative; }
+    @media (max-width: 37.5em) {
+      .story__shape {
+        transform: translateX(-3rem) skewX(0); } }
   .story__image {
     height: 100%;
     transform: translateX(-4rem) scale(1.2);
@@ -581,6 +596,9 @@ body {
     backface-visibility: hidden; }
   .story__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .story__text {
+        transform: skewX(0); } }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -892,3 +910,9 @@ body {
   .book__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .book__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
