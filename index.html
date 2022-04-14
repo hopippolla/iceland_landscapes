@@ -9,6 +9,12 @@
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+        <script>
+            function closeNav() {
+              document.getElementById("navi-toggle").checked = false;
+            }
+          </script>
         
         <title>Iceland | Emotional landscapes</title>
     </head>
@@ -25,11 +31,11 @@
                 <ul class="navigation__list">
 
                     
-                    <li class="navigation__item"><a href="#" class="navigation__link">About us</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Your benefits</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Popular tours</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Book now</a> </li>
+                    <li class="navigation__item"><a href="#section-about" class="navigation__link" onclick="closeNav()">About us</a></li>
+                    <li class="navigation__item"><a href="#section-features" class="navigation__link" onclick="closeNav()">Your benefits</a></li>
+                    <li class="navigation__item"><a href="#section-tours" class="navigation__link" onclick="closeNav()">Popular tours</a></li>
+                    <li class="navigation__item"><a href="#section-stories"  class="navigation__link" onclick="closeNav()">Stories</a></li>
+                    <li class="navigation__item"><a href="#section-book" class="navigation__link" onclick="closeNav()">Book now</a> </li>
                 </ul>
                 </div>
             </nav>
@@ -48,13 +54,13 @@
                     <span class="heading-primary--sub">emotional landscapes</span>
                 </h1>
 
-                <a href="#" class="btn btn--white btn--animated">Discover</a>
+                <a href="#section-tours" class="btn btn--white btn--animated">Discover</a>
             </div>
 
         </header>
         
         <main>
-            <section class="section-about">
+            <section class="section-about" id="section-about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Exciting tours for adventurous people
@@ -73,9 +79,6 @@
                             Walk through the mountains of Iceland. And as you come to a new valley, as you come to a new landscape, you will have a certain view. If you stand still, the landscape doesn't necessarily tell you how big it is. It doesn't really tell you what you are looking at. The moment you start to move the mountain starts to move. 
                         </p> 
 
-                        <a href="#" class="btn-text">
-                            Learn more &rarr;
-                        </a>
                     </div>
                     <div class="col col-1-of-2">
                         <div class="composition">
@@ -87,7 +90,7 @@
                 </div>
             </section>
 
-            <section class="section-features">
+            <section class="section-features" id="section-features">
                 
                 <div class="row">
                     <div class="col col-1-of-4">
@@ -132,7 +135,7 @@
                 </div>
             </section>
 
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         MOST POPULAR TOURS
@@ -171,7 +174,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#popup" class="btn btn--white">Book now!</a>
+                                    <a href="#popup-1" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -208,7 +211,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#popup" class="btn btn--white">Book now!</a>
+                                    <a href="#popup-2" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -242,19 +245,15 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#popup" class="btn btn--white">Book now!</a>
+                                    <a href="#popup-3" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="u-center-text u-margin-bottom-big">
-                    <a href="#" class="btn btn--white">Discover Iceland</a>
-                    
-                </div>
             </section>
             
-            <section class="section-stories">
+            <section class="section-stories" id="section-stories">
                 <div class="bg-video">
                     
                     <video class="bg-video__content" autoplay muted loop>
@@ -271,7 +270,7 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="/img/IMG_0154.jpg" class= "story__image" alt="Person 1">
+                            <img src="/img/girl_traveler.jpg" class= "story__image" alt="Person 1">
                             <figcaption class="story__caption">
                                 Mary Smith
                             </figcaption>
@@ -287,7 +286,7 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="/img/IMG_0346.jpg" class= "story__image" alt="Person 2">
+                            <img src="/img/boy_traveler.jpg" class= "story__image" alt="Person 2">
                             <figcaption class="story__caption">
                                 Bob Johnson
                             </figcaption>
@@ -305,7 +304,7 @@
                 </div>
             </section>
 
-            <section class="section-book">
+            <section class="section-book" id="section-book">
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
@@ -343,7 +342,7 @@
                                 </div>
 
                                 <div class="form__group u-margin-bottom-small">
-                                    <button class="btn btn--white next-step">Next step &rarr;</button>
+                                    <button class="btn btn--white next-step">Next step</button>
                                 </div>
 
                             </form>
@@ -378,11 +377,11 @@
             </div>
         </footer>
 
-        <div class="popup" id="popup">
+        <div class="popup popup-1" id="popup-1">
             <div class="popup__content">
                 <div class="popup__left">
-                    <img src="img/ice-13.jpg" alt="tour photo" class="popup__img">
-                    <img src="img/ice-12.jpg" alt="tour photo" class="popup__img">
+                    <img src="img/volcano-1.jpg" alt="tour photo" class="popup__img">
+                    <img src="img/volcano-2.jpg" alt="tour photo" class="popup__img">
                 </div>
                 <div class="popup__right">
                     <a href="#section-tours" class="popup__close">&times</a>
@@ -395,6 +394,43 @@
                 </div>
             </div>
         </div>
+
+        <div class="popup popup-2" id="popup-2">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/aurora-1.jpg" alt="tour photo" class="popup__img">
+                    <img src="img/aurora-2.jpg" alt="tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start Booking</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read terms before booking.</h3>
+                    <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis ab fugit, iste modi impedit ullam nisi iure dolore quas optio quisquam fuga amet assumenda a velit nam dolorem natus.
+
+                    </p>
+                    <a href="" class="btn btn--grey">Book now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup popup-3" id="popup-3">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/glacier-1.jpg" alt="tour photo" class="popup__img">
+                    <img src="img/glacier-2.jpg" alt="tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start Booking</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read terms before booking.</h3>
+                    <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis ab fugit, iste modi impedit ullam nisi iure dolore quas optio quisquam fuga amet assumenda a velit nam dolorem natus.
+
+                    </p>
+                    <a href="" class="btn btn--grey">Book now</a>
+                </div>
+            </div>
+        </div>
+
 
     </body>
     </html>
