@@ -8,7 +8,7 @@ transform-style: preserve-3d;
         background-size: cover;
 
         &--1{
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(/img/ice-8.jpg);
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(img/ice-8.jpg);
             height: 50%;
             width: 100%;
             position: absolute;
@@ -19,7 +19,7 @@ transform-style: preserve-3d;
         }
 
         &--2{
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(/img/ice-aurora.jpg);
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(img/ice-aurora.jpg);
             height: 50%;
             width: 100%;
             position: absolute;
@@ -30,7 +30,7 @@ transform-style: preserve-3d;
         }
 
         &--3{
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(/img/ice-12.jpg);
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(img/ice-12.jpg);
             height: 50%;
             width: 100%;
             position: absolute;
