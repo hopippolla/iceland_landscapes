@@ -226,7 +226,7 @@ body {
   .card__picture {
     background-size: cover; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #0396f1, #022d49), url(/img/ice-8.jpg);
+      background-image: linear-gradient(to right bottom, #0396f1, #022d49), url(img/ice-8.jpg);
       height: 50%;
       width: 100%;
       position: absolute;
@@ -235,7 +235,7 @@ body {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #06f0f0, #004040), url(/img/ice-aurora.jpg);
+      background-image: linear-gradient(to right bottom, #06f0f0, #004040), url(img/ice-aurora.jpg);
       height: 50%;
       width: 100%;
       position: absolute;
@@ -244,7 +244,7 @@ body {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #87f006, #6c8901), url(/img/ice-12.jpg);
+      background-image: linear-gradient(to right bottom, #87f006, #6c8901), url(img/ice-12.jpg);
       height: 50%;
       width: 100%;
       position: absolute;
