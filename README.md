@@ -7,7 +7,8 @@ It is a fictional page for thematic tours in Iceland and it was created to pract
 Even though people say using float to create the layout is kinda old, I decided to create the page using just floats to get familiar with the way it works. 
 
 <h2> Screencaps </h2>
-![](https://github.com/hopippolla/iceland_landscapes/blob/master/ice_1.gif)
+![](https://giphy.com/embed/e6bTwEDKNBo0dYcZ9q)
+
 
 
 
