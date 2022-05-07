@@ -20,6 +20,4 @@ Even though people say using float to create the layout is kinda old, I decided 
 
 
 
-
-# iceland_landscapes
-Practicing CSS, Sass 
+#css #html #sass
